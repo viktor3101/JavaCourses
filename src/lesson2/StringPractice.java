@@ -1,4 +1,4 @@
-package com.lesson2;
+package lesson2;
 
 public class StringPractice {
     
