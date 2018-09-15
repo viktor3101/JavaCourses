@@ -1,4 +1,4 @@
-package HWLevelZero.PartOne;
+package HomeWork.Lesson4.LevelZero.PartOne;
 
 import java.util.Scanner;
 
