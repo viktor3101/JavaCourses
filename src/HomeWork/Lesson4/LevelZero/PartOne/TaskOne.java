@@ -10,7 +10,7 @@ public class TaskOne {
         if (day >= 1 && day <= 5) {
             System.out.println("Weekday");
         }
-        if (day > 7) {
+        if (day > 7 || day < 1) {
             System.out.println("Invalid data");
         } else {
             System.out.println("Weekend");
