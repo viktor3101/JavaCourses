@@ -19,19 +19,20 @@ public class Words {
         return false;
     }
 
+    private static void testTotalLength() {
+        System.out.println(totalLength(new String[]{"asd", "asd", "asd"}));
+    }
+
+    private static void testContainsEmptyWord() {
+        System.out.println(containsEmptyWord(new String[]{"asd", "asd", "asd"}));
+        System.out.println(containsEmptyWord(new String[]{""}));
+        System.out.println(containsEmptyWord(new String[]{}));
+        System.out.println(containsEmptyWord(new String[]{"", "asd", "asd"}));
+    }
+
     public static void main(String[] args) {
         testTotalLength();
         testContainsEmptyWord();
     }
 
-    private static void testTotalLength() {
-        System.out.println(totalLength(new String[]{"asd","asd","asd"}));
-    }
-
-    private static void testContainsEmptyWord() {
-        System.out.println(containsEmptyWord(new String[]{"asd","asd","asd"}));
-        System.out.println(containsEmptyWord(new String[]{""}));
-        System.out.println(containsEmptyWord(new String[]{}));
-        System.out.println(containsEmptyWord(new String[]{"","asd","asd"}));
-    }
 }
