@@ -4,9 +4,6 @@ public class Words {
 
     public static int totalLength(String[] words) {
         int res = 0;
-       /* for (int i = 0; i < words.length; i++) {
-            res += words[i].length();
-        }*/
         for (String word : words) {
             res += word.length();
         }
@@ -23,8 +20,18 @@ public class Words {
     }
 
     public static void main(String[] args) {
-        String[] stringArray = new String[]{};
-        System.out.println(totalLength(stringArray));
-        System.out.println(containsEmptyWord(stringArray));
+        testTotalLength();
+        testContainsEmptyWord();
+    }
+
+    private static void testTotalLength() {
+        System.out.println(totalLength(new String[]{"asd","asd","asd"}));
+    }
+
+    private static void testContainsEmptyWord() {
+        System.out.println(containsEmptyWord(new String[]{"asd","asd","asd"}));
+        System.out.println(containsEmptyWord(new String[]{""}));
+        System.out.println(containsEmptyWord(new String[]{}));
+        System.out.println(containsEmptyWord(new String[]{"","asd","asd"}));
     }
 }
