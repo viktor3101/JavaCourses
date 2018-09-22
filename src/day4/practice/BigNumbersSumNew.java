@@ -1,7 +1,5 @@
 package day4.practice;
 
-import java.util.Scanner;
-
 public class BigNumbersSumNew {
     public static int maxSize(String strOne, String strTwo) {
         return Math.max(strOne.length(), strTwo.length());
